@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Navigation</title>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #1E90FF;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.nav {
+  display: flex;
+}
+
+.list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  border-radius: 5px;
+  background: rgba(255,255,255,.5);
+}
+
+.item {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+.item.arrow {
+  flex: 1;
+  font-size: 28px;
+}
+
+.item:hover {
+  background: rgba(255,255,255,.1);
+}
+
+.link {
+  text-align: center;
+  text-decoration: none;
+  color: #8B0000;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0TsmmFNEpNpnONRnOH7_ju7lauM-O9riCzHND_Mpl-S9NUlEU"/">
+
+    <nav class="nav">
+      <ul class="list">
+ 
+        <li class="item arrow">
+          <a href="#" class="link">←</a>
+        </li>
+        <li class="item">
+          <a href="#" class="link">RECOMMENDATION::</a>
+        </li>
+        <li class="item">
+          <a href="#" class="link">@ 2 PLAYER:: Tic-tac-toe</a>
+        </li>
+        <li class="item">
+          <a href="#" class="link">@ Play with Numbers::#NumberGrid </a>
+        </li>
+        <li class="item">
+          <a href="#" class="link">copyright:MIND GAMES</a>
+        <li class="item arrow">
+          <a href="#" class="link">→</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+<script type="text/javascript" language="javascript"> 
+function pingIt(ipAddress) {
+      var oShell = new ActiveXObject("wscript.shell"); 
+      oShell.Run("cmd.exe /k ping " + ipAddress); 
+}
+function telnetIt(ipAddress) {
+      var oShell = new ActiveXObject("wscript.shell"); 
+      oShell.Run("cmd.exe /k telnet " + ipAddress); 
+}
+</script>
+
+<a id="ne" href="javascript:telnetIt('192.168.43.171')">‏GO TO GAME!!</a> | <a href="javascript:pingIt('192.168.43.171')"></a>
+</body>
+</html>
